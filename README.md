@@ -1,2 +1,2 @@
 # TUES_Fest
-# This is my TUES Fest repository.
+This is my TUES Fest repository.
