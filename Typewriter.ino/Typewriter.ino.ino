@@ -1,32 +1,35 @@
 unsigned int count = 0;
 void setup() {
-
-  for(int i = 2; i <= 8; i++){
+  for(int i = 2; i <= 13; i++){
     pinMode(i, OUTPUT);
-    digitalWrite(i, LOW);  
+    digitalWrite(i, LOW);
   }
-  for(int i = 22; i <= 53; i++){
-    if(i == 23 || i == 25 || i == 27 || 
-        i == 29 || i == 31 || i == 33 || 
-        i == 35 || i == 39){
-          continue;
-        }
-    pinMode(i, OUTPUT);
-    digitalWrite(i, LOW);  
-  }
+   for(int i = 25; i <= 53; i++){
+    if(i == 25 || i == 28 ||
+      i == 29 || i == 27 || i == 30 || 
+      i == 31 || i == 33 || i == 35 || 
+      i == 36 || i == 37 || i == 38 || 
+      i == 39 || i == 40 || i == 41 || 
+      i == 43 || i == 45 || i == 23 ||
+      i == 47 || i == 49 || i == 51 ||
+      i == 53){
+        pinMode(i, OUTPUT);
+        digitalWrite(i, LOW);
+      }
+    }
 }
 
 void loop() {
-
-  delay(5000);
+ 
+   delay(5000);
   if(count == 0){
    char arr[] = "TUES Fest\n";  //INPUT YOUR TEXT HERE 
    for(int i = 0; arr[i] != '\0'; i++){
       switch(arr[i]){
        case 'a': 
-        digitalWrite(40, HIGH);
+        digitalWrite(9, HIGH);
         delay(300);
-        digitalWrite(40, LOW);
+        digitalWrite(9, LOW);
         delay(300);
         break;
        case 'b': 
@@ -42,9 +45,9 @@ void loop() {
         delay(300);
         break;
        case 'd': 
-        digitalWrite(50, HIGH);
+        digitalWrite(12, HIGH);
         delay(300);
-        digitalWrite(50, LOW);
+        digitalWrite(12, LOW);
         delay(300);
         break;
        case 'e': 
@@ -54,15 +57,15 @@ void loop() {
         delay(300);
         break;
        case 'f': 
-        digitalWrite(26, HIGH);
+        digitalWrite(39, HIGH);
         delay(300);
-        digitalWrite(26, LOW);
+        digitalWrite(39, LOW);
         delay(300);
         break;
        case 'g': 
-        digitalWrite(22, HIGH);
+        digitalWrite(25, HIGH);
         delay(300);
-        digitalWrite(22, LOW);
+        digitalWrite(25, LOW);
         delay(300);
         break;
        case 'h': 
@@ -120,15 +123,15 @@ void loop() {
         delay(300);
         break;
        case 'q': 
-        digitalWrite(48, HIGH);
+        digitalWrite(13, HIGH);
         delay(300);
-        digitalWrite(48, LOW);
+        digitalWrite(13, LOW);
         delay(300);
         break;
        case 'r': 
-        digitalWrite(34, HIGH);
+        digitalWrite(11, HIGH);
         delay(300);
-        digitalWrite(34, LOW);
+        digitalWrite(11, LOW);
         delay(300);
         break;
        case 's': 
@@ -138,9 +141,9 @@ void loop() {
         delay(300);
         break;
        case 't': 
-        digitalWrite(30, HIGH);
+        digitalWrite(29, HIGH);
         delay(300);
-        digitalWrite(30, LOW);
+        digitalWrite(29, LOW);
         delay(300);
         break;
        case 'u': 
@@ -150,21 +153,21 @@ void loop() {
         delay(300);
         break;
        case 'v': 
-        digitalWrite(24, HIGH);
+        digitalWrite(31, HIGH);
         delay(300);
-        digitalWrite(24, LOW);
+        digitalWrite(31, LOW);
         delay(300);
         break;
        case 'w': 
-        digitalWrite(42, HIGH);
+        digitalWrite(33, HIGH);
         delay(300);
-        digitalWrite(42, LOW);
+        digitalWrite(33, LOW);
         delay(300);
         break;
        case 'x': 
-        digitalWrite(44, HIGH);
+        digitalWrite(35, HIGH);
         delay(300);
-        digitalWrite(44, LOW);
+        digitalWrite(35, LOW);
         delay(300);
         break;
        case 'y': 
@@ -174,10 +177,10 @@ void loop() {
         delay(300);
         break;
        case 'z': 
-        digitalWrite(52, HIGH);
-        delay(2000);
-        digitalWrite(52, LOW);
-        delay(2000);
+        digitalWrite(27, HIGH);
+        delay(300);
+        digitalWrite(27, LOW);
+        delay(300);
         break;
        case '.': 
         digitalWrite(37, HIGH);
@@ -198,243 +201,243 @@ void loop() {
         delay(300);
         break;
        case ' ': 
-        digitalWrite(32, HIGH);
+        digitalWrite(10, HIGH);
         delay(300);
-        digitalWrite(32, LOW);
+        digitalWrite(10, LOW);
         delay(300);
         break;
        case 'A': 
-        digitalWrite(46, HIGH);
+        digitalWrite(23, HIGH);
         delay(300);
-        digitalWrite(40, HIGH); 
+        digitalWrite(9, HIGH); 
         delay(300);
-        digitalWrite(46, LOW); 
-        digitalWrite(40, LOW);
+        digitalWrite(23, LOW); 
+        digitalWrite(9, LOW);
         delay(300);
         break;
        case 'B': 
-        digitalWrite(46, HIGH); 
+        digitalWrite(23, HIGH); 
         delay(300);
         digitalWrite(2, HIGH); 
         delay(300);
-        digitalWrite(46, LOW); 
+        digitalWrite(23, LOW); 
         digitalWrite(2, LOW); 
         delay(300);
         break;
        case 'C': 
-        digitalWrite(46, HIGH);
+        digitalWrite(23, HIGH);
         delay(300);
         digitalWrite(36, HIGH); 
         delay(300);
-        digitalWrite(46, LOW); 
+        digitalWrite(23, LOW); 
         digitalWrite(36, LOW); 
         delay(300);
         break;
        case 'D': 
-        digitalWrite(46, HIGH); 
+        digitalWrite(23, HIGH); 
         delay(300);
-        digitalWrite(50, HIGH); 
+        digitalWrite(12, HIGH); 
         delay(300);
-        digitalWrite(46, LOW); 
-        digitalWrite(50, LOW); 
+        digitalWrite(23, LOW); 
+        digitalWrite(12, LOW); 
         delay(300);
         break;
        case 'E': 
-        digitalWrite(46, HIGH);
+        digitalWrite(23, HIGH);
         delay(300); 
         digitalWrite(28, HIGH); 
         delay(300);
-        digitalWrite(46, LOW); 
+        digitalWrite(23, LOW); 
         digitalWrite(28, LOW); 
         delay(300);
         break;
        case 'F': 
-        digitalWrite(46, HIGH); 
+        digitalWrite(23, HIGH); 
         delay(300);
-        digitalWrite(26, HIGH); 
+        digitalWrite(39, HIGH); 
         delay(300);
-        digitalWrite(46, LOW); 
-        digitalWrite(26, LOW); 
+        digitalWrite(23, LOW); 
+        digitalWrite(39, LOW); 
         delay(300);
         break;
        case 'G': 
-        digitalWrite(46, HIGH);
+        digitalWrite(23, HIGH);
         delay(300);
-        digitalWrite(22, HIGH); 
+        digitalWrite(25, HIGH); 
         delay(300);
-        digitalWrite(46, LOW); 
-        digitalWrite(22, LOW); 
+        digitalWrite(23, LOW); 
+        digitalWrite(25, LOW); 
         delay(300);
         break;
        case 'H': 
-        digitalWrite(46, HIGH);
+        digitalWrite(23, HIGH);
         delay(300); 
         digitalWrite(41, HIGH); 
         delay(300);
-        digitalWrite(46, LOW); 
+        digitalWrite(23, LOW); 
         digitalWrite(41, LOW); 
         delay(300);
         break;
        case 'I': 
-        digitalWrite(46, HIGH); 
+        digitalWrite(23, HIGH); 
         delay(300);
         digitalWrite(5, HIGH); 
         delay(300);
-        digitalWrite(46, LOW); 
+        digitalWrite(23, LOW); 
         digitalWrite(5, LOW); 
         delay(300);
         break;
        case 'J': 
-        digitalWrite(46, HIGH);
+        digitalWrite(23, HIGH);
         delay(300); 
         digitalWrite(4, HIGH); 
         delay(300);
-        digitalWrite(46, LOW); 
+        digitalWrite(23, LOW); 
         digitalWrite(4, LOW); 
         delay(300);
         break;
        case 'K': 
-        digitalWrite(46, HIGH); 
+        digitalWrite(23, HIGH); 
         delay(300);
         digitalWrite(8, HIGH); 
         delay(300);
-        digitalWrite(46, LOW); 
+        digitalWrite(23, LOW); 
         digitalWrite(8, LOW); 
         delay(300);
         break;
        case 'L': 
-        digitalWrite(46, HIGH); 
+        digitalWrite(23, HIGH); 
         delay(300);
         digitalWrite(47, HIGH); 
         delay(300);
-        digitalWrite(46, LOW); 
+        digitalWrite(23, LOW); 
         digitalWrite(47, LOW); 
         delay(300);
         break;
        case 'M': 
-        digitalWrite(46, HIGH); 
+        digitalWrite(23, HIGH); 
         delay(300);
         digitalWrite(51, HIGH); 
         delay(300);
-        digitalWrite(46, LOW); 
+        digitalWrite(23, LOW); 
         digitalWrite(51, LOW); 
         delay(300);
         break;
        case 'N': 
-        digitalWrite(46, HIGH);
+        digitalWrite(23, HIGH);
         delay(300); 
         digitalWrite(7, HIGH); 
         delay(300);
-        digitalWrite(46, LOW); 
+        digitalWrite(23, LOW); 
         digitalWrite(7, LOW); 
         delay(300);
         break;
        case 'O': 
-        digitalWrite(46, HIGH);
+        digitalWrite(23, HIGH);
         delay(300); 
         digitalWrite(49, HIGH); 
         delay(300);
-        digitalWrite(46, LOW); 
+        digitalWrite(23, LOW); 
         digitalWrite(49, LOW); 
         delay(300);
         break;
        case 'P': 
-        digitalWrite(46, HIGH); 
+        digitalWrite(23, HIGH); 
         delay(300);
         digitalWrite(43, HIGH); 
         delay(300);
-        digitalWrite(46, LOW); 
+        digitalWrite(23, LOW); 
         digitalWrite(43, LOW); 
         delay(300);
         break;
        case 'Q': 
-        digitalWrite(46, HIGH);
+        digitalWrite(23, HIGH);
         delay(300);
-        digitalWrite(48, HIGH); 
+        digitalWrite(13, HIGH); 
         delay(300);
-        digitalWrite(46, LOW); 
-        digitalWrite(48, LOW); 
+        digitalWrite(23, LOW); 
+        digitalWrite(13, LOW); 
         delay(300);
         break;
        case 'R': 
-        digitalWrite(46, HIGH);
+        digitalWrite(23, HIGH);
         delay(300); 
-        digitalWrite(34, HIGH); 
+        digitalWrite(11, HIGH); 
         delay(300);
-        digitalWrite(46, LOW); 
-        digitalWrite(34, LOW); 
+        digitalWrite(23, LOW); 
+        digitalWrite(11, LOW); 
         delay(300);
         break;
        case 'S': 
-        digitalWrite(46, HIGH);
+        digitalWrite(23, HIGH);
         delay(300); 
         digitalWrite(38, HIGH); 
         delay(300);
-        digitalWrite(46, LOW); 
+        digitalWrite(23, LOW); 
         digitalWrite(38, LOW); 
         delay(300);
         break;
        case 'T': 
-        digitalWrite(46, HIGH); 
+        digitalWrite(23, HIGH); 
         delay(300);
-        digitalWrite(30, HIGH); 
+        digitalWrite(29, HIGH); 
         delay(300);
-        digitalWrite(46, LOW); 
-        digitalWrite(30, LOW); 
+        digitalWrite(23, LOW); 
+        digitalWrite(29, LOW); 
         delay(300);
         break;
        case 'U': 
-        digitalWrite(46, HIGH); 
+        digitalWrite(23, HIGH); 
         delay(300);
         digitalWrite(6, HIGH); 
         delay(300);
-        digitalWrite(46, LOW); 
+        digitalWrite(23, LOW); 
         digitalWrite(6, LOW); 
         delay(300);
         break;
        case 'V': 
-        digitalWrite(46, HIGH);
+        digitalWrite(23, HIGH);
         delay(300); 
-        digitalWrite(24, HIGH); 
+        digitalWrite(31, HIGH); 
         delay(300);
-        digitalWrite(46, LOW); 
-        digitalWrite(24, LOW); 
+        digitalWrite(23, LOW); 
+        digitalWrite(31, LOW); 
         delay(300);
         break;
        case 'W': 
-        digitalWrite(46, HIGH); 
+        digitalWrite(23, HIGH); 
         delay(300);
-        digitalWrite(42, HIGH); 
+        digitalWrite(33, HIGH); 
         delay(300);
-        digitalWrite(46, LOW); 
-        digitalWrite(42, LOW); 
+        digitalWrite(23, LOW); 
+        digitalWrite(33, LOW); 
         delay(300);
         break;
        case 'X': 
-        digitalWrite(46, HIGH);
+        digitalWrite(23, HIGH);
         delay(300); 
-        digitalWrite(44, HIGH); 
+        digitalWrite(35, HIGH); 
         delay(300);
-        digitalWrite(46, LOW); 
-        digitalWrite(44, LOW); 
+        digitalWrite(23, LOW); 
+        digitalWrite(35, LOW); 
         delay(300);
         break;
        case 'Y': 
-        digitalWrite(46, HIGH);
+        digitalWrite(23, HIGH);
         delay(300); 
         digitalWrite(3, HIGH); 
         delay(300);
-        digitalWrite(46, LOW); 
+        digitalWrite(23, LOW); 
         digitalWrite(3, LOW); 
         delay(300);
         break;
        case 'Z': 
-        digitalWrite(46, HIGH);
+        digitalWrite(23, HIGH);
         delay(300); 
-        digitalWrite(52, HIGH); 
+        digitalWrite(27, HIGH); 
         delay(300);
-        digitalWrite(46, LOW); 
-        digitalWrite(52, LOW); 
+        digitalWrite(23, LOW); 
+        digitalWrite(27, LOW); 
         delay(300);
         break;
        default:
