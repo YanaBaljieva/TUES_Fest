@@ -1,48 +1,44 @@
 unsigned int count = 0;
 void setup() {
+
+  Serial.begin(9600);
+
   for(int i = 2; i <= 13; i++){
     pinMode(i, OUTPUT);
-    digitalWrite(i, LOW);
+    digitalWrite(i, LOW);  
   }
-   for(int i = 25; i <= 53; i++){
-    if(i == 25 || i == 28 ||
-      i == 29 || i == 27 || i == 30 || 
-      i == 31 || i == 33 || i == 35 || 
-      i == 36 || i == 37 || i == 38 || 
-      i == 39 || i == 40 || i == 41 || 
-      i == 43 || i == 45 || i == 23 ||
-      i == 47 || i == 49 || i == 51 ||
-      i == 53){
-        pinMode(i, OUTPUT);
-        digitalWrite(i, LOW);
-      }
-    }
+  for(int i = 23; i <= 53; i++){
+    pinMode(i, OUTPUT);
+    digitalWrite(i, LOW);  
+  }
 }
 
 void loop() {
- 
-   delay(5000);
-  if(count == 0){
-   char arr[] = "TUES Fest\n";  //INPUT YOUR TEXT HERE 
-   for(int i = 0; arr[i] != '\0'; i++){
-      switch(arr[i]){
+  char symbol;
+
+  if(Serial.available()) {
+    symbol = Serial.read();
+  } else return;
+
+
+      switch(symbol){
        case 'a': 
         digitalWrite(9, HIGH);
-        delay(300);
+        delay(10);
         digitalWrite(9, LOW);
-        delay(300);
+        delay(10);
         break;
        case 'b': 
         digitalWrite(2, HIGH);
-        delay(300);
+        delay(10);   
         digitalWrite(2, LOW);
-        delay(300);
+        delay(10);
         break;
        case 'c': 
-        digitalWrite(36, HIGH);
-        delay(300);
-        digitalWrite(36, LOW);
-        delay(300);
+        digitalWrite(34, HIGH);
+        delay(10);
+        digitalWrite(34, LOW);
+        delay(10);
         break;
        case 'd': 
         digitalWrite(12, HIGH);
@@ -51,9 +47,9 @@ void loop() {
         delay(300);
         break;
        case 'e': 
-        digitalWrite(28, HIGH);
+        digitalWrite(44, HIGH);
         delay(300);
-        digitalWrite(28, LOW);
+        digitalWrite(44, LOW);
         delay(300);
         break;
        case 'f': 
@@ -159,15 +155,15 @@ void loop() {
         delay(300);
         break;
        case 'w': 
-        digitalWrite(33, HIGH);
+        digitalWrite(41, HIGH);
         delay(300);
-        digitalWrite(33, LOW);
+        digitalWrite(41, LOW);
         delay(300);
         break;
        case 'x': 
-        digitalWrite(35, HIGH);
+        digitalWrite(33, HIGH);
         delay(300);
-        digitalWrite(35, LOW);
+        digitalWrite(33, LOW);
         delay(300);
         break;
        case 'y': 
@@ -178,9 +174,9 @@ void loop() {
         break;
        case 'z': 
         digitalWrite(27, HIGH);
-        delay(300);
+        delay(2000);
         digitalWrite(27, LOW);
-        delay(300);
+        delay(2000);
         break;
        case '.': 
         digitalWrite(37, HIGH);
@@ -227,10 +223,10 @@ void loop() {
        case 'C': 
         digitalWrite(23, HIGH);
         delay(300);
-        digitalWrite(36, HIGH); 
+        digitalWrite(34, HIGH); 
         delay(300);
         digitalWrite(23, LOW); 
-        digitalWrite(36, LOW); 
+        digitalWrite(34, LOW); 
         delay(300);
         break;
        case 'D': 
@@ -245,10 +241,10 @@ void loop() {
        case 'E': 
         digitalWrite(23, HIGH);
         delay(300); 
-        digitalWrite(28, HIGH); 
+        digitalWrite(44, HIGH); 
         delay(300);
         digitalWrite(23, LOW); 
-        digitalWrite(28, LOW); 
+        digitalWrite(44, LOW); 
         delay(300);
         break;
        case 'F': 
@@ -407,19 +403,19 @@ void loop() {
        case 'W': 
         digitalWrite(23, HIGH); 
         delay(300);
-        digitalWrite(33, HIGH); 
+        digitalWrite(41, HIGH); 
         delay(300);
         digitalWrite(23, LOW); 
-        digitalWrite(33, LOW); 
+        digitalWrite(41, LOW); 
         delay(300);
         break;
        case 'X': 
         digitalWrite(23, HIGH);
         delay(300); 
-        digitalWrite(35, HIGH); 
+        digitalWrite(33, HIGH); 
         delay(300);
         digitalWrite(23, LOW); 
-        digitalWrite(35, LOW); 
+        digitalWrite(33, LOW); 
         delay(300);
         break;
        case 'Y': 
@@ -441,14 +437,12 @@ void loop() {
         delay(300);
         break;
        default:
-        digitalWrite(32, HIGH);  //space as default
+        digitalWrite(10, HIGH);  //space as default
         delay(300);
-        digitalWrite(32, LOW);
+        digitalWrite(10, LOW);
         delay(300);
         break;
        
       }
-   }
-   count++;
-  }
+
 }
